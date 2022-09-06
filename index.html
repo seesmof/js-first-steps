@@ -15,10 +15,6 @@
     <title>JavaScript First Steps | seesmof</title>
 
     <!-- links -->
-    <script src="https://kit.fontawesome.com/dfc53f140e.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -28,6 +24,34 @@
     <style>
         section {
             height: calc(100vh - 140px);
+        }
+
+        section li {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem;
+
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 300ms;
+
+            cursor: pointer;
+        }
+
+        section li:last-of-type {
+            border: unset;
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        section li:first-of-type {
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        section li:hover {
+            background: #f1f5f9;
+        }
+
+        .active {
+            background: hsl(210, 11%, 84%);
         }
     </style>
 
@@ -107,7 +131,7 @@
             <div class="card bg-base-100 shadow-2xl">
                 <div class="card-body">
                     <div class="py-4 text-center">
-                        <h2 class="font-bold text-black text-3xl">Click a list item to replace this text
+                        <h2 class="font-bold text-black text-3xl" id="headline">Click a list item to replace this text
                         </h2>
                         <p class="text-gray-500">Keep in mind that 10 items is the limit, so you cannot add more
                             than
@@ -115,27 +139,15 @@
                         </p>
                     </div>
 
-                    <table class="table rounded-xl p-3 my-2">
-                        <tbody>
-                            <tr class="hover">
-                                <td>First Item</td>
-                            </tr>
-                            <tr class="hover">
-                                <td>Second Item</td>
-                            </tr>
-                            <tr class="hover">
-                                <td>Third Item</td>
-                            </tr>
-                            <tr class="hover">
-                                <td>Fourth Item</td>
-                            </tr>
-                            <tr class="hover">
-                                <td>Fifth Item</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <ul class="pb-3" id="ourList">
+                        <li>Heading Number 1</li>
+                        <li>Heading Number 2</li>
+                        <li>Heading Number 3</li>
+                        <li>Heading Number 4</li>
+                        <li>Heading Number 5</li>
+                    </ul>
 
-                    <button
+                    <button id="add"
                         class="bg-blue-500 font-medium px-7 py-2 rounded-xl text-white mx-auto transition duration-300 shadow-md hover:shadow-xl hover:bg-teal-500">Add
                         new item</button>
                 </div>
@@ -156,6 +168,12 @@
             </p>
         </div>
     </footer>
+
+    <!-- links -->
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/dfc53f140e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
 </body>
 
