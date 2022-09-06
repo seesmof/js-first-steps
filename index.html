@@ -22,10 +22,6 @@
 
     <!-- styles -->
     <style>
-        section {
-            height: calc(100vh - 140px);
-        }
-
         section li {
             border-bottom: 1px solid #e2e8f0;
             padding: 1rem;
@@ -122,7 +118,8 @@
     <!-- navbar end -->
 
     <!-- /main section -->
-    <section data-theme="light" class="p-5 bg-gradient-to-tr from-blue-600 to-teal-600">
+    <section data-theme="light"
+        class="p-5 bg-gradient-to-tr from-blue-600 to-teal-600 min-h-[85vh] flex justify-center items-center">
 
         <!-- flex container -->
         <div class="container w-4/5 mx-auto flex justify-center items-center h-full">
@@ -131,11 +128,11 @@
             <div class="card bg-base-100 shadow-2xl">
                 <div class="card-body">
                     <div class="py-4 text-center">
-                        <h2 class="font-bold text-black text-3xl" id="headline">Click a list item to replace this text
+                        <h2 class="font-bold text-black text-3xl duration-300 hover:scale-105 pb-3" id="headline">Click
+                            a list item to replace this text
                         </h2>
-                        <p class="text-gray-500">Keep in mind that 10 items is the limit, so you cannot add more
-                            than
-                            that
+                        <p class="text-gray-500">Keep in mind that this is my first JS project, so something can work
+                            not as intended :)
                         </p>
                     </div>
 
@@ -148,7 +145,7 @@
                     </ul>
 
                     <button id="add"
-                        class="bg-blue-500 font-medium px-7 py-2 rounded-xl text-white mx-auto transition duration-300 shadow-md hover:shadow-xl hover:bg-teal-500">Add
+                        class="bg-gradient-to-tl from-blue-500 to-teal-500 font-medium px-7 py-2 rounded-xl text-white mx-auto transition duration-300 shadow-md hover:shadow-xl hover:saturate-200 hover:scale-105">Add
                         new item</button>
                 </div>
             </div>
