@@ -30,7 +30,7 @@ Very simple one-page application made with JavaScript and some TailwindCSS for i
 
 - [Live View](https://seesmof.github.io/js-first-steps/)
 
-![Website Page](./images/JavaScript-First-Steps-seesmof.png)
+![Website Page](./images/image.png)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
